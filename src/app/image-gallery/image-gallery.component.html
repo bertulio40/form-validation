@@ -1,0 +1,7 @@
+<div class="gallery-container">
+  <div class="image" *ngFor="let image of images">
+    <a [href]="'https://wa.me/message/' + image.whatsappLink" target="_blank">
+      <img [src]="image.src" alt="Image" />
+    </a>
+  </div>
+</div>
